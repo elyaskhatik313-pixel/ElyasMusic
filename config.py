@@ -14,19 +14,19 @@ from pyrogram import filters
 load_dotenv()
 
 # ── Core bot config ─────────────────────────────────────────────────────────
-API_ID = int(getenv("API_ID", 26493077))
-API_HASH = getenv("API_HASH", "6586f0276c7748e54684719bdd247d90")
+API_ID = int(getenv("API_ID", 39636887))
+API_HASH = getenv("API_HASH", "58d9e9789942f13dfeae5a58aadc967c")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
-OWNER_ID = int(getenv("OWNER_ID", 7044783841))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "ItsMeVishalBots")
-BOT_USERNAME = getenv("BOT_USERNAME", "vaishaliTune_bot")
-BOT_NAME = getenv("BOT_NAME", "≽ ^⎚ 𝘃𝗮𝗶𝘀𝗵𝗮𝗹𝗶 𝘅 𝗺𝘂𝘀𝗶𝗰 ⎚^ ≼")
-ASSUSERNAME = getenv("ASSUSERNAME", "≽ ^⎚ 𝗮𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 ⎚^ ≼")
+OWNER_ID = int(getenv("OWNER_ID", 8922591120))
+OWNER_USERNAME = getenv("OWNER_USERNAME", "Devil_Shiva_op")
+BOT_USERNAME = getenv("BOT_USERNAME", "RIdhii_Music_bot")
+BOT_NAME = getenv("BOT_NAME", "≽ ^⎚  𝐑ɪᴅʜɪ ꭙ 𝐌𝐮𝐬𝐢𝐜  ⎚^ ≼")
+ASSUSERNAME = getenv("ASSUSERNAME", "≽ ^⎚  𝐑ɪᴅʜɪ ꭙ 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 ⎚^ ≼")
 
 # ── Database & logging ────────────────────────────────────────────────────────
 MONGO_DB_URI = getenv("MONGO_DB_URI")
-LOGGER_ID = int(getenv("LOGGER_ID", -1002425220992))
+LOGGER_ID = int(getenv("LOGGER_ID", -1003967121724))
 
 # ── Limits (durations in min/sec; sizes in bytes) ──────────────────────────────
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
@@ -59,8 +59,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN")  # needed if repo is private
 
 # ── Support links ──────────────────────────────────────────────────────────
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ItsMeVishalBots")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ItsMeVishalBots")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+SnUd5iJTEqY3YzUx")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+zwBuaQ7xctFlYjVl")
 # Link used by the /privacy command (set your own privacy-policy post/page)
 PRIVACY_LINK = getenv("PRIVACY_LINK", SUPPORT_CHAT)
 
@@ -117,16 +117,18 @@ DURATION_LIMIT = time_to_seconds(f"{DURATION_LIMIT_MIN}:00")
 # ───── Bot Search Messages (Single Line) ───── #
 # {0} = user mention/name
 AYU = [
-    "𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠 ꨄ︎ {0} ",
-    "𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐁𝐞𝐬𝐭 𝐓𝐫𝐚𝐜𝐤 ♡ {0} ",
-    "𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐌𝐮𝐬𝐢𝐜 ✦ {0} ",
-    "𝐘𝐨𝐮𝐫 𝐕𝐢𝐛𝐞 𝐈𝐬 𝐂𝐨𝐦𝐢𝐧𝐠 ꨄ︎ {0} ",
-    "𝐏𝐥𝐚𝐲𝐢𝐧𝐠 𝐒𝐨𝐨𝐧 𝐁𝐚𝐛𝐲 ♡ {0} ",
-    "𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐑𝐞𝐚𝐝𝐲 𝐅𝐨𝐫 𝐘𝐨𝐮 ✦ {0} ",
-    "𝐇𝐨𝐥𝐝 𝐎𝐧 𝐁𝐚𝐛𝐞 ꨄ︎ {0} ",
-    "𝐌𝐮𝐬𝐢𝐜 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐅𝐨𝐫 ♡ {0} ",
-    "𝐀𝐥𝐦𝐨𝐬𝐭 𝐑𝐞𝐚𝐝𝐲 𝐉𝐚𝐚𝐧 ꨄ︎ {0} ",
-    "𝐏𝐫𝐞𝐩𝐚𝐫𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐓𝐫𝐚𝐜𝐤 ✦ {0} ",
+    
+    "𝐅ɪɴᴅɪɴɢ 𝐘ᴏᴜʀ 𝐒ᴏɴɢ ꨄ︎ {0} ",
+    "𝐒ᴇᴀʀᴄʜɪɴɢ 𝐁ᴇ𝐬ᴛ 𝐓ʀᴀᴄᴋ ♡ {0} ",
+    "𝐋ᴏᴀᴅɪɴɢ 𝐌ᴜ𝐬ɪᴄ ✦ {0} ",
+    "𝐘ᴏᴜʀ 𝐕ɪʙᴇ 𝐈𝐬 𝐂ᴏᴍɪɴɢ ꨄ︎ {0} ",
+    "𝐏ʟᴀʏɪɴɢ 𝐒ᴏᴏɴ 𝐁ᴀʙʏ ♡ {0} ",
+    "𝐆ᴇᴛᴛɪɴɢ 𝐑ᴇᴀᴅʏ 𝐅ᴏʀ 𝐘ᴏᴜ ✦ {0} ",
+    "𝐇ᴏʟᴅ 𝐎ɴ 𝐁ᴀʙᴇ ꨄ︎ {0} ",
+    "𝐌ᴜ𝐬ɪᴄ 𝐋ᴏᴀᴅɪɴɢ 𝐅ᴏʀ ♡ {0} ",
+    "𝐀ʟᴍᴏ𝐬ᴛ 𝐑ᴇᴀᴅʏ 𝐉ᴀᴀɴ ꨄ︎ {0} ",
+    "𝐏ʀᴇᴘᴀʀɪɴɢ 𝐘ᴏᴜʀ 𝐓ʀᴀᴄᴋ ✦ {0} ",
+    
 ]
 
 AYUV = [
@@ -156,8 +158,7 @@ if COOKIE_URL and not re.match(r"^https://(batbin\.me|pastebin\.com)/[A-Za-z0-9]
     
 print("""
 ╔════════════════════════════════════╗
-║🎵 𝗩𝗜𝗦𝗛𝗔𝗟 𝗠𝗨𝗦𝗜𝗖 𝗕𝗢𝗧 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗘𝗗𝗜𝗧𝗜𝗢𝗡  
-║       ✦ 𝗖𝗼𝗻𝗳𝗶𝗴 𝗟𝗼𝗮𝗱𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝘀! ✦   
+║🎵   𝐑ɪᴅʜɪ ꭙ 𝐌𝐮𝐬𝐢𝐜  
 ╚════════════════════════════════════╝
 """)
 
