@@ -38,6 +38,7 @@ python-whois
 py-yt-search
 pyyaml
 qrcode
+python3.10.11
 requests
 speedtest-cli
 SpeechRecognition
